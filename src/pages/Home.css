@@ -1,0 +1,228 @@
+/* LUXURY EDITORIAL HOME CSS */
+
+.home-page {
+    background-color: #F9F8F6;
+    /* Premium Warm White */
+    color: #1a202c;
+    min-height: 100vh;
+    padding-top: 0;
+    /* Nav is now in flow */
+    font-family: 'Outfit', sans-serif;
+}
+
+/* TYPOGRAPHY */
+.home-page h1,
+.home-page h2,
+.home-page h3 {
+    font-family: 'Merriweather', serif;
+    /* Elegant Serif */
+    color: #1a202c;
+    font-weight: 300;
+    /* Lighter weight for luxury */
+}
+
+/* HERO SECTION */
+.luxury-hero {
+    text-align: center;
+    padding: 1rem 2rem 1rem;
+    max-width: 1000px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.hero-headline {
+    font-size: 3.5rem;
+    line-height: 1.2;
+    margin-bottom: 2rem;
+    color: #1a202c;
+    animation: fade-in 1s ease-out;
+}
+
+.hero-headline span {
+    font-style: italic;
+    color: #b48e43;
+    /* Gold Accent */
+}
+
+.hero-subtext {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #718096;
+    max-width: 600px;
+    margin: 0 auto 3rem;
+    font-family: 'Outfit', sans-serif;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+.btn-luxury-primary {
+    padding: 1rem 3rem;
+    background: #1a202c;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-size: 0.9rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border: 1px solid #1a202c;
+}
+
+.btn-luxury-primary:hover {
+    background: transparent;
+    color: #1a202c;
+}
+
+.btn-luxury-outline {
+    padding: 1rem 3rem;
+    background: transparent;
+    color: #1a202c;
+    border: 1px solid #cbd5e0;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-size: 0.9rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.btn-luxury-outline:hover {
+    border-color: #1a202c;
+}
+
+/* FEATURE IMAGE GRID (Pinterest Style) */
+.luxury-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 2rem 8rem;
+}
+
+.grid-item {
+    position: relative;
+    aspect-ratio: 3/4;
+    /* Portrait ratio */
+    background: #fff;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05);
+    transition: transform 0.4s ease;
+}
+
+.grid-item:hover {
+    transform: translateY(-10px);
+}
+
+.grid-item:nth-child(2) {
+    margin-top: 4rem;
+    /* Restore staggered look */
+}
+
+/* Image styles */
+.grid-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.grid-item:hover .grid-image {
+    transform: scale(1.1);
+}
+
+.grid-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent);
+    color: white;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.grid-item:hover .grid-content {
+    opacity: 1;
+}
+
+.grid-content h3 {
+    color: white;
+    font-family: 'Outfit', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+/* CATEGORY STRIP */
+.category-strip {
+    background: white;
+    padding: 6rem 0;
+    text-align: center;
+    border-top: 1px solid #f1f1f1;
+}
+
+.category-strip h2 {
+    font-size: 2.5rem;
+    margin-bottom: 4rem;
+}
+
+.cat-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.cat-pill {
+    padding: 0.75rem 2rem;
+    border: 1px solid #e2e8f0;
+    border-radius: 50px;
+    color: #4a5568;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: all 0.2s ease;
+}
+
+.cat-pill:hover {
+    border-color: #b48e43;
+    color: #b48e43;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .home-page {
+        padding-top: 250px;
+    }
+
+    .hero-headline {
+        font-size: 2.5rem;
+    }
+
+    .luxury-grid {
+        grid-template-columns: 1fr;
+        gap: 4rem;
+    }
+
+    .grid-item:nth-child(2) {
+        margin-top: 0;
+    }
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

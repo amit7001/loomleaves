@@ -1,0 +1,110 @@
+/* src/components/Login.css */
+
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;
+    padding: 2rem;
+    background-color: var(--color-background);
+    animation: fadeIn 0.8s ease-out;
+}
+
+.login-card {
+    background: white;
+    padding: 3rem;
+    border-radius: 4px;
+    /* Sharp corners for editorial look, or slight radius */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    /* Soft, premium shadow */
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.login-title {
+    font-family: 'Playfair Display', serif;
+    /* Assuming a serif font is available for headers */
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    color: var(--color-text-primary);
+    font-weight: 500;
+    letter-spacing: -0.02em;
+}
+
+.login-subtitle {
+    font-family: 'Inter', sans-serif;
+    color: var(--color-text-secondary);
+    margin-bottom: 2.5rem;
+    font-size: 0.95rem;
+    font-weight: 300;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.form-group {
+    text-align: left;
+}
+
+.form-label {
+    display: block;
+    font-size: 0.8rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+    color: var(--color-text-secondary);
+    font-weight: 500;
+}
+
+.form-input {
+    width: 100%;
+    padding: 12px 0;
+    border: none;
+    border-bottom: 1px solid #ddd;
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+    background: transparent;
+}
+
+.form-input:focus {
+    outline: none;
+    border-bottom-color: var(--color-primary);
+}
+
+.login-button {
+    margin-top: 2rem;
+    padding: 1rem 2rem;
+    background-color: black;
+    color: white;
+    border: none;
+    font-family: 'Inter', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.login-button:hover {
+    background-color: #333;
+    transform: translateY(-2px);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
