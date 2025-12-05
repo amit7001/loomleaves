@@ -47,16 +47,13 @@ function Navigation() {
                 <Link to="/category/gifting">Gifting</Link>
               </div>
             </li>
-            <li />
-            <li />
+
             <div className="logo-scroll-section">
               <Link to="/" className="logo">
                 <img src={logoImage} alt="Loomleaves" className="logo-image" />
               </Link>
             </div>
 
-            <li />
-            <li />
             <li><Link to="/showroom" className={location.pathname === '/showroom' ? 'active' : ''}>Showroom</Link></li>
             <li><Link to="/contact" className={location.pathname === '/contact' ? 'active' : ''}>Contact</Link></li>
             <li><Link to="/contact" className="nav-btn-highlight">Call +91 9896786599</Link></li>

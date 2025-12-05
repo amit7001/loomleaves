@@ -16,21 +16,21 @@ function Showroom() {
             <div className="showroom-gallery">
                 <div className="gallery-item wide">
                     <img
-                        src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=1600&q=80"
-                        alt="Loomleaves Showroom Interior"
+                        src="https://lh3.googleusercontent.com/p/AF1QipOW4GUB0padd8UkHFVyhcvNXn5dn1Y5n6_afp0=w1600-h1200"
+                        alt="Loomleaves Showroom Exterior"
                         className="gallery-image"
                     />
                 </div>
                 <div className="gallery-item">
                     <img
-                        src="https://images.unsplash.com/photo-1618220179428-22790b461013?auto=format&fit=crop&w=800&q=80"
+                        src="https://lh3.googleusercontent.com/p/AF1QipP9aiWd-E2YnMJaovy135fZ4MdqYrvX_kQJZ8U=w1600-h1200"
                         alt="Premium Fabrics Display"
                         className="gallery-image"
                     />
                 </div>
                 <div className="gallery-item">
                     <img
-                        src="https://images.unsplash.com/photo-1617325247661-675ab4b64ae2?auto=format&fit=crop&w=800&q=80"
+                        src="https://lh3.googleusercontent.com/p/AF1QipNN8pZk90JuuAfrIInd7X4w5NzyyJXscI4p29g=w1600-h1200"
                         alt="Bedding Collections"
                         className="gallery-image"
                     />

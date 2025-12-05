@@ -65,7 +65,7 @@ function Contact() {
           <h2>Locate Us</h2>
           <div className="map-container">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13961.352467946221!2d76.9634!3d29.3909!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390dd1a2a8a8a8a9%3A0x1a2a3a4a5a6a7a8a!2sGohana%20Chowk%2C%20Panipat%2C%20Haryana!5e0!3m2!1sen!2sin!4v1620000000000!5m2!1sen!2sin"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3476.642728439135!2d76.96783457602959!3d29.3807484752645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ddbf81eac993f%3A0x1c651522eec7dc5e!2sTAYAL%20Home%20and%20Style!5e0!3m2!1sen!2sin!4v1764976341711!5m2!1sen!2sin"
               width="100%"
               height="450"
               style={{ border: 0, filter: 'grayscale(0.2)' }}
@@ -74,6 +74,7 @@ function Contact() {
               referrerPolicy="no-referrer-when-downgrade"
               title="Loomleaves Location"
             ></iframe>
+
           </div>
         </div>
       </div>
